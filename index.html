@@ -1,71 +1,90 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Final project</title>
+    <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&family=Kalnia&family=Red+Hat+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&family=Kalnia&family=Red+Hat+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile_menu.css">
     <link rel="stylesheet" href="css/media.css">
-
+    <link rel="stylesheet" href="css/style_preproc.scss">
 
 </head>
 <body>
 
-<div class="container">
+<div class="common-background">
     <header>
         <h2 class="logo">Panto</h2>
-        <nav>
-            <ul>
-                <li><a class="a_list" href="#">Furniture</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <!--  <nav>-->
+        <!--    <ul>-->
+        <!--      <li><a class="a_list" href="#">Furniture</a></li>-->
+        <!--      <li><a href="#">Shop</a></li>-->
+        <!--      <li><a href="#">About Us</a></li>-->
+        <!--      <li><a href="#">Contact</a></li>-->
+        <!--    </ul>-->
+        <!--  </nav>-->
+
+        <div class="sec-center">
+            <!--    MENU BUTTON-->
+            <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+            <label class="for-dropdown" for="dropdown"> Menu <i class="uil uil-arrow-down"></i></label>
+
+            <!--      Выпадающий список меню-->
+            <nav class="section-dropdown">
+                <ul>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
         <div class="shopping-cart">
             <a href="#">
-                <img src="./images/bag.png" alt="Bag">
+                <img src="./images/bag.png" alt="Cart">
             </a>
         </div>
     </header>
 
-    <main>
+    <div class="container">
+
         <section class="main_text">
-            <h1>Make Your Interior More<br> Minimalistic & Modern</h1>
-            <p>Turn your room with panto into a lot more minimalist<br> and modern with ease and speed</p>
-            <!-- Search form -->
+            <h1>Make Your Interior More <br> Minimalistic & Modern</h1>
+            <p>Turn your room with panto into a lot more minimalist <br> and modern with ease and speed</p>
             <form class="search-bar" action="#" method="get">
                 <input type="search" name="search" placeholder="Search furniture">
                 <button type="submit"></button>
             </form>
         </section>
 
-    </main>
+    </div>
+
 </div>
 
 <section class="reason">
     <h2>Why<br> Choosing Us</h2>
-
     <div class="points">
         <div class="value">
             <h3>Luxury facilities</h3>
             <p>The advantage of hiring a workspace with us is that gives you comfortable service and all-around facilities.</p>
             <a href="#" class="more-info">More Info</a>
         </div>
-
         <div class="value">
             <h3>Affordable Price</h3>
             <p>You can get a workspace of the highest quality at an affordable price and still enjoy the facilities that are only here.</p>
             <a href="#" class="more-info">More Info</a>
         </div>
-
         <div class="value">
             <h3>Many Choices</h3>
             <p>We provide many unique workspace choices so that you can choose the workspace to your liking.</p>
@@ -73,6 +92,7 @@
         </div>
     </div>
 </section>
+
 
 <section class="best">
     <div class="options">
@@ -88,7 +108,6 @@
         </div>
     </div>
 
-
     <div class="chairs">
         <div class="product-card owl-carousel">
             <a href="#"><img src="./images/group1.png" alt="Sakarias Armchair"></a>
@@ -96,34 +115,33 @@
             <a href="#"><img src="./images/group3.png" alt="Anjay Chair"></a>
             <a href="#"><img src="./images/group4.png" alt="Nyantuy Chair"></a>
         </div>
-    <a href="#" class="view-all">View All</a>
+        <a href="#" class="view-all">View All</a>
     </div>
 </section>
 
-<section class="experiences">
-    <article class="green">
-    <div class="green_sofa">
+
+
+<div class="content-container">
+    <div class="content-block">
         <img src="./images/experiences.png" alt="Experience">
-        <div class="we_provide">
-            <h3>experiences</h3>
+        <div class="text-content">
             <h2>We Provide You The Best Experience</h2>
-            <p>You don’t have to worry about the result because all of these<br> interiors are made by people who are professionals in their fields<br> with an elegant and lucurious style and with premium quality<br> materials.</p>
-            <a class="more-info" href="#">Read More</a>
+            <p>We believe everyone should have access to the best experiences that life has to offer. With our unique furniture pieces, we provide just that.</p>
+            <a href="#">Read More</a>
         </div>
     </div>
-    </article>
-    <article class="mix">
-    <div class="materials">
-        <div class="serious_materials">
-            <h3>Materials</h3>
-            <h2>Very serious materials for making furniture</h2>
-            <p>Because panto was very serious about designing furniture for our<br> environment, using a very expensive and famous capital but at a<br> relatively low price</p>
-            <a class="more-info" href="#">Read More</a>
+
+    <div class="content-block">
+        <div class="text-content">
+            <h2>Very Serious Materials For Making Furniture</h2>
+            <p>Our commitment to quality means we source the finest materials available for all our furniture pieces, ensuring durability and comfort.</p>
+            <a href="#">Read More</a>
         </div>
         <img src="./images/materials.png" alt="Materials">
+
     </div>
-    </article>
-</section>
+</div>
+
 <section class="reviews">
     <h3>Testimonials</h3>
     <h2>Our Client Reviews</h2>
@@ -133,8 +151,6 @@
         <img src="./images/card3.png" alt="Room image" class="reviews-image">
     </div>
 </section>
-
-
 
 <footer class="site_footer">
 
@@ -166,29 +182,34 @@
                 <ul>
                     <li><a href="https://www.facebook.com">
                         <svg class="icon-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/>
+                            <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4
+            .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/>
                         </svg>Facebook</a></li>
                     <li><a href="https://www.twitter.com" >
                         <svg class="icon-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/>
+                            <path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1
+              8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4
+              0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4
+              0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.
+              9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.
+              2-14.3 20.8-32.2 39.3-52.6 54.3z"/>
                         </svg>Twitter</a></li>
                     <li><a href="https://www.instagram.com">
                         <svg class="icon-instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <path fill="#000000" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
-                        </svg>Istagram</a></li>
+                            <path fill="#000000" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5
+              339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.
+              7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8
+              26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.
+              9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2
+              93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37
+              2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-
+              34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.
+              1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                        </svg>Instagram</a></li>
                 </ul>
             </div>
         </div>
-<!--        <div class="social_media">-->
-<!--            <h4>Follow Us</h4>-->
-<!--            <ul class="contact">-->
-<!--            <li><a href="#" class="social_icon" target="_blank"> Facebook </a></li>-->
-<!--            <li><a href="#" class="social_icon" target="_blank"> Twitter </a></li>-->
-<!--            <li><a href="#" class="social_icon" target="_blank"> Instagram </a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
     </div>
-
 
     <div class="footer_bottom">
         <p>Copyright © 2021</p>
@@ -197,10 +218,14 @@
             <li><a href="#">Privacy Policy</a></li>
         </ul>
     </div>
+
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha384-k6RqeWecmsI0xg7eZN6N7nS3Pw8yKu9s8/5p9UbylThU/TVJjpQQeDj0PqCF6m4J" crossorigin="anonymous"></script>
+
+
+<script src="../../../Library/Application Support/JetBrains/PhpStorm2023.2/javascript/extLibs/http_code.jquery.com_jquery-3.7.1.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-<script src="js/owl.carousel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha384-k6RqeWecmsI0xg7eZN6N7nS3Pw8yKu9s8/5p9UbylThU/TVJjpQQeDj0PqCF6m4J" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
+<script src="js/owl.carousel.js"></script>
 </body>
 </html>

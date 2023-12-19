@@ -1,0 +1,213 @@
+
+@media only screen and (max-width: 767px) {
+
+
+    .common-background {
+        background-image: url('../images/mainsofa.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-width: 100%;
+        min-height: auto;
+        position: relative;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        position: relative;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+
+    .container {
+        width: 100%;
+        margin: auto;
+        min-height: auto;
+    }
+
+
+    .logo {
+        color: #FFF;
+        font-family: 'Gilroy-Bold', sans-serif;
+        font-size: 22px;
+        text-transform: capitalize;
+    }
+
+
+    header nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header ul li {
+        padding-left: 20px;
+    }
+
+    header ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Gilroy-Medium', sans-serif;
+        font-size: 16px;
+    }
+
+
+    .a_list:after {
+        width: 15px;
+        height: 15px;
+    }
+
+    .main_text {
+        /*margin: auto;*/
+        text-align: center;
+        display: inline-block;
+        /*min-width: 100%;*/
+        position: relative;
+    }
+
+    .main_text h1{
+        color: #FFF;
+        text-align: center;
+        font-family: 'Gilroy-Bold', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 104px */
+        letter-spacing: -0.8px;
+        text-transform: capitalize;
+        padding-bottom: 7px;
+        display: inline-block;
+
+    }
+
+
+    .main_text p{
+        color: #FFF;
+        text-align: center;
+        font-family: 'Gilroy-Regular', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+
+    }
+    /*.main_text p {*/
+    /*    font-size: 18px; !* Уменьшаем размер шрифта для абзацев *!*/
+    /*    line-height: 140%; !* Адаптируем межстрочный интервал *!*/
+    /*}*/
+
+    .search-bar {
+        display: inline-block;
+        padding: 4px 4px 4px 10px;
+        border-radius: 22px;
+        width: 172px;
+
+        /*margin: 10px auto;*/
+
+    }
+
+
+    .search-bar input,
+    .search-bar button {
+        width: auto;
+        flex: 0;
+    }
+
+    /* Если у кнопки были отступы или фиксированные размеры, обнуляем их */
+    .search-bar button {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Убедитесь, что иконка поиска центрирована относительно кнопки */
+    .search-bar button:before {
+        margin: auto; /* Автоматические отступы для центрирования */
+    }
+
+
+
+    .shopping-cart img {
+        width: 30px;
+        height: auto;
+    }
+
+    .reason {
+        min-width: 100%;
+        min-height: auto;
+        position: relative;
+        background: #FFF;
+        margin: auto;
+        display: block;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+
+    .content-container {
+        min-width: 100%;
+        min-height: auto;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .content-block {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        flex-direction: column-reverse;
+    }
+
+    .reviews {
+        text-align: center;
+        background: #FFF;
+        display: block;
+    }
+
+    .reviews-slider {
+        /*display: flex;*/
+        /*justify-content: space-between;*/
+        overflow: hidden;
+        /*gap: 20px;*/
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        flex-direction: column;
+    }
+
+    .site_footer {
+        min-width: 100%;
+        min-height: auto;
+        /*padding: 10px 20px;*/
+        background: #F7F7F7;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_content {
+        display: block;
+        /*justify-content: space-around;*/
+        align-items: center;
+        min-width: 100%;
+        margin: auto;
+        /*padding-top: 118px;*/
+    }
+
+    .footer_panto_section {
+        display: flex;
+        min-width: 100%;
+        padding-bottom: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        /*gap: 29px;*/
+    }
+
+
+
+
+}

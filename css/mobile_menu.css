@@ -1,0 +1,113 @@
+
+
+.sec-center {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+}
+
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/*<БОЛЬШАЯ КНОПКА МЕНЮ*/
+
+.dropdown:checked + label,
+.dropdown:not(:checked) + label{
+    position: relative;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 2;
+    height: 50px;
+    transition: all 200ms linear;
+    border-radius: 42px;
+    width: 220px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    text-align: center;
+    border: none;
+    background-color: #E58411;
+    cursor: pointer;
+    color: white;
+}
+
+
+/*выпадающий список меню*/
+
+.section-dropdown {
+    position: absolute;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 0.862px solid rgba(255, 255, 255, 0.60);
+    backdrop-filter: blur(4px);
+    border-radius: 42px;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: block;
+    box-shadow: 0 14px 35px 0 rgba(9,9,12,0.4);
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: all 200ms linear;
+}
+
+/*когда жмешь меню оно выпадает*/
+
+.dropdown:checked ~ .section-dropdown{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.dropdown:checked ~ .section-dropdown a{
+    position: relative;
+    color: #fff;
+    transition: all 200ms linear;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 5px 0;
+    /*padding-left: 20px;*/
+    /*padding-right: 15px;*/
+    margin: 2px 0;
+    /*text-align: left;*/
+    text-decoration: none;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    -ms-flex-pack: distribute;
+}
+
+
+a:hover {
+    color: #E58411;
+    /*background-color:red;*/
+}
